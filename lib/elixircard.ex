@@ -4,15 +4,9 @@ defmodule Elixircard do
   """
 
   @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> Elixircard.hello()
-      :world
-
+    Create a deck cards
   """
-  def create_deck   do
+  def create_deck do
     values = ["Ace", "Two", "Three", "Four"]
     suits = ["Hearts", "Clover", "Diamonds", "Spades"]
 
@@ -21,13 +15,20 @@ defmodule Elixircard do
     end
 
   end
-
+  @doc """
+    Do randomize from deck parameter
+  """
   def shuffle(deck) do
     Enum.shuffle(deck)
   end
-
+  @doc """
+    Determines whether a deck contains a given card
+  """
   def contains?(deck, card) do 
     Enum.member?(deck, card)
   end
 
+  def deal(deck, hand_size) do
+    Enum.split(deck, hand_size)
+  end
 end
