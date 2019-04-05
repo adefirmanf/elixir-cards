@@ -10,7 +10,7 @@ defmodule Elixircard do
     values = ["Ace", "Two", "Three", "Four"]
     suits = ["Hearts", "Clover", "Diamonds", "Spades"]
 
-    for suit <- suits, value <- values do    
+    for suit <- suits, value <- values do   
       "#{value} #{suit}"
     end
 
