@@ -18,6 +18,7 @@ defmodule Elixircard do
   @doc """
   asld;alsklsaklds
     Do randomize from deck parameter
+    asdasd
   """
   def shuffle(deck) do
     Enum.shuffle(deck)
