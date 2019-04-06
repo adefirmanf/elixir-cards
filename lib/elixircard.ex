@@ -16,6 +16,7 @@ defmodule Elixircard do
 
   end
   @doc """
+  asld;
     Do randomize from deck parameter
   """
   def shuffle(deck) do
